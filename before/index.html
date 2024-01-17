@@ -19,7 +19,9 @@
             <div id="logo-img"></div>
           </a>
 
-          <div class="navbar-brand">
+          <div class="navbar-brand">  <!-- by default it is automated float left -->
+          
+          
             <a href="index.html"><h1>David Chu's China Bistro</h1></a>
             <p>
               <img src="images/star-k-logo.png" alt="Kosher certification">
@@ -27,15 +29,28 @@
             </p>
           </div>
 
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false"><!--Let's look at it in our bootstrap itself
+
+                             navbar-toggle in bootstrap.css
+                               it's floating to the right
+                              if we keep looking for
+                            nav bar toggle you'll see in a minute that
+                                at a certain media width it will be
+                                 display none, in other words it will only
+                                     display when it is less than, I believe,
+                                        less than medium or maybe it's small.--> 
+
+
+
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        </div>
+          
+        </div> <!-- #end navbar-header class -->
 
-        <div id="collapsable-nav" class="collapse navbar-collapse">
+        <div id="collapsable-nav" class="collapse navbar-collapse">   <!-- #end navbar-header class -->
            <ul id="nav-list" class="nav navbar-nav navbar-right">
             <li>
               <a href="menu-categories.html">
@@ -58,7 +73,21 @@
       </div><!-- .container -->
     </nav><!-- #header-nav -->
   </header>
+    
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:410-602-5008">
+    <span class="glyphicon glyphicon-earphone"></span>
+    410-602-5008
+    </a> 
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
 
+
+  <div id="main-content" class="container">
+   <div class="jumbotron">
+   <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs"> 
+  </div>
+</div>
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
